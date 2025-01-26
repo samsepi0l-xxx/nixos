@@ -30,7 +30,7 @@
       foot
       showmethekey
       vscode
-      
+      neovide
 
       # langs
       nodejs
