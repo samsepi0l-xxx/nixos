@@ -11,9 +11,9 @@
       github-desktop
       vlc
       lutris
-      rider
-      idea-community
-      
+      jetbrains.rider
+      jetbrains.idea-community-bin
+
 
       # tools
       bat
