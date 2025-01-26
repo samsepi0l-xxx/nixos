@@ -47,6 +47,7 @@
       go
       gcc
       typescript
+      python39
       eslint
       tree-sitter
     ];
