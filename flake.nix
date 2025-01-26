@@ -15,4 +15,3 @@
     nixosConfigurations = import ./hosts { inherit self; };
   };
 }
-

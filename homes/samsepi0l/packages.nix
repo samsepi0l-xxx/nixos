@@ -37,7 +37,6 @@
       neovide
 
       # langs
-      jdk8
       jdk17
       nodejs
       gjs
