@@ -4,9 +4,7 @@ let
 in
 { pkgs, impurity, ... }: {
   imports = [
-    ## Dotfiles (manual)
     ./dotfiles.nix
-    # Stuff
     ./packages.nix
   ];
 
@@ -28,5 +26,5 @@ in
   programs = {
     home-manager.enable = true;
   };
-  home.stateVersion = "25.05"; # this must be the version at which you have started using the program
+  home.stateVersion = "25.05"; # Don't change this ! 
 }

@@ -13,12 +13,19 @@ let
     homeDir
     hm
   ];
+  impurity = inputs.impurity;
 in
 {
   "nixos" = nixpkgs.lib.nixosSystem {
     specialArgs = { inherit inputs; };
     modules =
       [
+        {
+          # Impurity
+          imports = [ impurity.nixosModules.impurity ];
+          impurity.configRoot = self;
+          impurity.enable = true;
+        }
 
         ./nixos # this imports your entire host configuration in one swoop
 
@@ -31,4 +38,5 @@ in
       ]
       ++ homes; # imports the home-manager related configurations
   };
+  "nixos-impure" = self.nixosConfigurations."nixos".extendModules { modules = [{ impurity.enable = true; }]; };
 }
