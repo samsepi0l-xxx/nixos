@@ -25,6 +25,12 @@ in
 
   programs = {
     home-manager.enable = true;
+    neovim = {
+      enable = true;
+      package = pkgs.neovim-nightly-overlay.packages.${pkgs.system}.default;
+    };
   };
+
   home.stateVersion = "25.05"; # Don't change this ! 
 }
+

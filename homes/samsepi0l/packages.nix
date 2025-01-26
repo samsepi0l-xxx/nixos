@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
 
   home = {
@@ -29,6 +30,7 @@
       foot
       showmethekey
       vscode
+      neovim
 
       # langs
       nodejs
