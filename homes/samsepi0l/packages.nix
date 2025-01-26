@@ -37,6 +37,30 @@
       wine
       winetricks
       dxvk
+      openssl
+      tree-sitter
+      asdf-vm
+
+      # security
+      keepassxc
+      openvpn
+      softether
+      wireguard-tools
+      wireguard-ui
+      mullvad-vpn
+      tor
+      tor-browser
+      librewolf
+      proxychains-ng
+      veracrypt
+      onionshare-gui
+      onioncircuits
+      telegram-desktop
+      zeronet-conservancy
+      freenet
+      metadata
+      exiftool
+      pdftag
 
       # langs
       jdk17
@@ -49,7 +73,7 @@
       typescript
       python39
       eslint
-      tree-sitter
+
     ];
   };
 }
