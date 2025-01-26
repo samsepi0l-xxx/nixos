@@ -13,7 +13,8 @@
       lutris
       jetbrains.rider
       jetbrains.idea-community-bin
-
+      vscode
+      neovide
 
       # tools
       bat
@@ -33,8 +34,9 @@
       glib
       foot
       showmethekey
-      vscode
-      neovide
+      wine
+      winetricks
+    
 
       # langs
       jdk17
