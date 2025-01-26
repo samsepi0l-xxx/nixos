@@ -10,6 +10,10 @@
       dolphin
       github-desktop
       vlc
+      lutris
+      rider
+      idea-community
+      
 
       # tools
       bat
@@ -33,6 +37,8 @@
       neovide
 
       # langs
+      jdk8
+      jdk17
       nodejs
       gjs
       bun
