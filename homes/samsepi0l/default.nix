@@ -2,7 +2,7 @@ let
   username = "samsepi0l";
   homeDirectory = "/home/samsepi0l";
 in
-{ pkgs, impurity, ... }: {
+{ inputs, pkgs, impurity, ... }: {
   imports = [
     ./dotfiles.nix
     ./packages.nix
@@ -27,7 +27,7 @@ in
     home-manager.enable = true;
     neovim = {
       enable = true;
-      package = pkgs.neovim-nightly-overlay.packages.${pkgs.system}.default;
+      package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
     };
   };
 

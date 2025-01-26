@@ -1,5 +1,6 @@
-{ pkgs, ... }:
-
+{ pkgs, ... }@inputs:
+let
+in
 {
 
   home = {
@@ -30,7 +31,7 @@
       foot
       showmethekey
       vscode
-      neovim
+      
 
       # langs
       nodejs

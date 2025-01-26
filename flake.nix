@@ -11,21 +11,8 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... }@inputs: let
-    overlays = [
-      neovim-nightly-overlay.overlays.default
-    ]; 
-  in {
+  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... }: {
     nixosConfigurations = import ./hosts { inherit self; };
-    homeConfigurations = {
-      samsepi0l = home-manager.lib.homeManagerConfiguration {
-        modules = [
-          {
-            nixpkgs.overlays = overlays;
-          }
-        ];
-      };
-    };
   };
 }
 
