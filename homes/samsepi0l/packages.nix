@@ -41,6 +41,7 @@
       gcc
       typescript
       eslint
+      tree-sitter
     ];
   };
 }
