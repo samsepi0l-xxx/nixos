@@ -36,7 +36,7 @@
       showmethekey
       wine
       winetricks
-    
+      dxvk
 
       # langs
       jdk17

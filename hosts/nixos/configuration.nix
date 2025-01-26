@@ -86,6 +86,7 @@
     git
     xdotool
     glibcLocales
+    vulkan-tools
   ];
 
   # Programs 
