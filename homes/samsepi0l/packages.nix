@@ -38,7 +38,6 @@
       winetricks
       dxvk
       openssl
-      tree-sitter
       asdf-vm
 
       # security

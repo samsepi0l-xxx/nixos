@@ -14,14 +14,17 @@
   boot = {
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "btrfs" "ext4" "fat32" "ntfs" ];
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
-    };
-    grub = {
-       efiSupport = true;
-       #efiInstallAsRemovable = true; # in case canTouchEfiVariables doesn't work for your system
-       device = "nodev";
+
+    loader = {
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot/efi";
+      };
+      grub = {
+        enable = true;
+        efiSupport = true;
+        device = "nodev";
+      };
     };
   };
 
