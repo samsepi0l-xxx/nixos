@@ -1,7 +1,7 @@
 { config, username, pkgs, ... }:
 
 {
-
+  # Nix.
   nixpkgs.config.allowUnfree = true;
   nix = {
     settings = {
@@ -14,22 +14,16 @@
   boot = {
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "btrfs" "ext4" "fat32" "ntfs" ];
-    loader.grub = {
-      enable = true;
-      device = "/dev/sda";
-      useOSProber = true;
-      enableCryptodisk = true;
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
     };
-    
-    initrd = {
-      secrets = { 
-        "/boot/crypto_keyfile.bin" = null;
-      };
-
-      luks.devices."luks-b86fc136-e927-4d0a-9dee-d3d3947d1c3b".keyFile = "/boot/crypto_keyfile.bin";
-    }; 
+    grub = {
+       efiSupport = true;
+       #efiInstallAsRemovable = true; # in case canTouchEfiVariables doesn't work for your system
+       device = "nodev";
+    };
   };
-
 
   # Network
 
@@ -43,20 +37,21 @@
 
   # Services
   services = {
+    printing.enable = true;
     envfs.enable = true;   
     gvfs.enable = true;
     openssh.enable = true;
+    displayManager.sddm.enable = true;
+    desktopManager.plasma6.enable = true;
+
     xserver = {
       enable = true;
-      displayManager.lightdm.enable = true;
-      desktopManager.xfce.enable = true;
       xkb = {
         layout = "us";
         variant = "";
       };
     };
   };
-
 
   # Security
   security = {
@@ -66,7 +61,6 @@
     # pam.services.swaylock-effects = {
   };
 
-  # hardware.pulseaudio.enable = false;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
@@ -75,6 +69,13 @@
       isNormalUser = true;
       description = "samsepi0l";
       extraGroups = [ "networkmanager" "wheel" "video" "input" "uinput" "libvirtd" ];
+      packages = with pkgs; [
+        kdePackages.kwin
+        kdePackages.kate
+        kdePackages.xwaylandvideobridge
+        kdePackages.xdg-desktop-portal-kde
+        kdePackages.spectacle
+      ];
     };
   };
 
@@ -103,7 +104,6 @@
     #   enableSSHSupport = true;
     # };
   };
-
 
   # Don't FUCKING change this!!!!!
   system.stateVersion = "24.11"; # Did you read the comment?
