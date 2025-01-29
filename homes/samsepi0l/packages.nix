@@ -15,6 +15,7 @@
       jetbrains.idea-community-bin
       vscode
       neovide
+      plank
 
       # tools
       bat
