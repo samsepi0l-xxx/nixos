@@ -13,8 +13,9 @@
     implicitPolicyTarget = "block";
     # FIXME: set yours pref USB devices (change {id} to your trusted USB device), use `lsusb` command (from usbutils package) to get list of all connected USB devices including integrated devices like camera, bluetooth, wifi, etc. with their IDs or just disable `usbguard`
     rules = ''
-      allow id {id} # device 1
-      allow id {id} # device 2
+      allow id 1ea7:0002 # SHARKOON Keyboard & Mouse
+      allow id 18f8:0f97 # Maxxter Gaming Mouse
+      allow id 22b8:2e81 # Motorola Moto G (Optional)
     '';
   };
 

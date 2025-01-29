@@ -1,0 +1,406 @@
+jan 29 20:30:39 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:30:39 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:30:39 nixos usbguard-daemon[267563]: [1738193439.279] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:30:39 nixos usbguard-daemon[267563]: [1738193439.291] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Consumed 104ms CPU time, 4.6M memory peak, 5M read from disk.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service completed and consumed the indicated resources.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:30:39 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:30:39 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:30:39 nixos usbguard-daemon[267693]: [1738193439.524] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:30:39 nixos usbguard-daemon[267693]: [1738193439.525] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:30:39 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:30:39 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:30:39 nixos usbguard-daemon[267728]: [1738193439.765] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:30:39 nixos usbguard-daemon[267728]: [1738193439.766] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:39 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:30:39 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:30:40 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:30:40 nixos usbguard-daemon[267756]: [1738193440.092] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:30:40 nixos usbguard-daemon[267756]: [1738193440.093] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 4.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:30:40 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:30:40 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:30:40 nixos usbguard-daemon[267771]: [1738193440.351] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:30:40 nixos usbguard-daemon[267771]: [1738193440.352] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Start request repeated too quickly.
+jan 29 20:30:40 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:30:40 nixos systemd[1]: Failed to start USBGuard daemon.
+░░ Subject: A unidade usbguard.service falhou
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service falhou.
+░░ 
+░░ O resultado é failed.
+jan 29 20:33:11 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:33:11 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:33:11 nixos usbguard-daemon[268864]: [1738193591.192] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:33:11 nixos usbguard-daemon[268864]: [1738193591.193] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:33:11 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:33:11 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:33:11 nixos usbguard-daemon[268873]: [1738193591.569] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:33:11 nixos usbguard-daemon[268873]: [1738193591.571] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:33:11 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:33:11 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:33:11 nixos usbguard-daemon[268885]: [1738193591.832] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:33:11 nixos usbguard-daemon[268885]: [1738193591.833] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:11 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:33:11 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:33:12 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:33:12 nixos usbguard-daemon[268895]: [1738193592.074] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:33:12 nixos usbguard-daemon[268895]: [1738193592.076] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 4.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:33:12 nixos systemd[1]: Starting USBGuard daemon...
+░░ Subject: Unidade usbguard.service sendo iniciado
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service está sendo iniciada.
+jan 29 20:33:12 nixos systemd[1]: Started USBGuard daemon.
+░░ Subject: Unidade usbguard.service concluiu a inicialização
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service concluiu a inicialização.
+░░ 
+░░ The start-up result is done.
+jan 29 20:33:12 nixos usbguard-daemon[268928]: [1738193592.319] (W) PERMISSIONS CHECK ON POLICY FILE ARE TURNED OFF!
+jan 29 20:33:12 nixos usbguard-daemon[268928]: [1738193592.320] (E) Rules: SourceLOCAL::/nix/store/psbvrmw5mw85kg0vgwh0hc9kgcqgy8x1-usbguard-rules: :1:6: parse error matching sor<usbguard::RuleParser::comment, usbguard::RuleParser::rule>
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit usbguard.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit usbguard.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Start request repeated too quickly.
+jan 29 20:33:12 nixos systemd[1]: usbguard.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit usbguard.service has entered the 'failed' state with result 'exit-code'.
+jan 29 20:33:12 nixos systemd[1]: Failed to start USBGuard daemon.
+░░ Subject: A unidade usbguard.service falhou
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A unidade usbguard.service falhou.
+░░ 
+░░ O resultado é failed.
