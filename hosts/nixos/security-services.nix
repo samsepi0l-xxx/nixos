@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, username, pkgs, lib, ... }:
 
 {
   # Some programs need SUID wrappers, can be configured further or are

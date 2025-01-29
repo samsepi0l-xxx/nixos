@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, username, pkgs, ... }:
 
 {
   # When connecting to untrusted networks, such as public Wi-Fi use a random MAC address to prevent tracking and unauthorized access to your device.

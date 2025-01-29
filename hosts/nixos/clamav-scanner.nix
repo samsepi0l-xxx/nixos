@@ -1,4 +1,4 @@
-{ ... }:
+{ config, username, pkgs, ... }:
 
 {
   services.clamav.scanner = {

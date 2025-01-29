@@ -1,6 +1,6 @@
 {
   imports = [
-    ./amd.nix
+    # ./amd.nix
     ./audio.nix
     # ./auto-upgrade.nix
     ./bluetooth.nix

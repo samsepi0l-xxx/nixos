@@ -1,4 +1,4 @@
-{ username, ... }:
+{ config, username, pkgs, ... }:
 
 {
   # Scheduled auto upgrade system (this is only for system upgrades, 

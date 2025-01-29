@@ -1,4 +1,4 @@
-{ ... }:
+{ config, username, pkgs, ... }:
 
 {
   # Enable the OpenSSH daemon.

@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, inputs, username, pkgs, ... }:
 
 {
   # Enable Hyprland
