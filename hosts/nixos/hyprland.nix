@@ -14,7 +14,7 @@
     hypridle
     hyprpaper
 
-    inputs.wezterm.packages.${pkgs.system}.default
+    alacritty
     cool-retro-term
 
     starship
