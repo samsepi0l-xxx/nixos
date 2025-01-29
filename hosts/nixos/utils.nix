@@ -5,7 +5,7 @@
     mold
     gcc
     gjs
-    cargo
+    # cargo
     clang
     lld
     lldb

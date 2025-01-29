@@ -5,7 +5,7 @@
     slack
     aws-sam-cli
     awscli2
-    cargo-lambda
+    # cargo-lambda
     gnumake
     cmake
     firebase-tools
