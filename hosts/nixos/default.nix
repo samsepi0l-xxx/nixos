@@ -18,7 +18,7 @@
     ./info-fetchers.nix
     ./keyboard.nix
     ./kernel.nix
-    #./llm.nix
+    ./llm.nix
     ./locale.nix
     ./lsp.nix
     # ./mac-randomize.nix
