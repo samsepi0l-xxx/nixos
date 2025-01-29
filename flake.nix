@@ -11,8 +11,8 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... }:
   {
-    nixosConfigurations = import ./hosts { inherit self; inherit inputs };
+    nixosConfigurations = import ./hosts { inherit self; };
   };
 }
