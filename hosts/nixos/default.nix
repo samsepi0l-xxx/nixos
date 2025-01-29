@@ -39,7 +39,7 @@
     ./utils.nix
     ./virtualisation.nix
     ./vpn.nix
-    ./wasm.nix
+    # ./wasm.nix
     ./work.nix
     ./yubikey.nix
   ];
