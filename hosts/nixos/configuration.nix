@@ -20,11 +20,6 @@
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot/EFI";
       };
-      grub = {
-        enable = true;
-        efiSupport = true;
-        device = "nodev";
-      };
     };
   };
 
