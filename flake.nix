@@ -1,5 +1,5 @@
 {
-  description = "Sam's flake";
+  description = "S4MMY N1X05 C0NF1GUR4T10N";
 
   inputs = {
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
@@ -11,7 +11,8 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... }: {
-    nixosConfigurations = import ./hosts { inherit self; };
+  outputs = { self, nixpkgs, home-manager, neovim-nightly-overlay, ... } @ inputs:
+  {
+    nixosConfigurations = import ./hosts { inherit self; inherit inputs };
   };
 }
