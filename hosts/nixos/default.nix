@@ -7,7 +7,6 @@
     ./bootloader.nix
     # ./clamav-scanner.nix
     ./configuration.nix
-    ./default.nix
     ./display-manager.nix
     ./dns.nix
     ./environment-variables.nix
