@@ -32,9 +32,8 @@
   environment.systemPackages = with pkgs; [
     #swig
     #libsemanage
-    policycoreutils
-    libsemanage.override {
-      withPython = false;
-    }
+    #policycoreutils
+    #libselinux
+    #libsemanage
   ];
 }
