@@ -3,7 +3,7 @@
 {
   services.ollama.enable = true;
   services.ollama.loadModels = [ "llama3.2:3b" "smallthinker:3b" "nomic-embed-text" ];
-  services.ollama.acceleration = "cuda";
+  services.ollama.acceleration = false;
   
   environment.systemPackages = with pkgs; [
     oterm
