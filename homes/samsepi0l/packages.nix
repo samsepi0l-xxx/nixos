@@ -15,7 +15,8 @@
       jetbrains.idea-community-bin
       vscode
       neovide
-      plank
+      # plank - only for xorg
+      latte-dock
 
       # tools
       bat
