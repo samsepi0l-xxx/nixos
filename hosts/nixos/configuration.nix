@@ -14,8 +14,10 @@
   boot = {
     tmp.cleanOnBoot = true;
     supportedFilesystems = [ "btrfs" "ext4" "fat32" "ntfs" ];
-
     loader = {
+      systemd-boot = {
+        enable = true;
+      };
       efi = {
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot/EFI";
