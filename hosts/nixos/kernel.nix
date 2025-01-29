@@ -30,7 +30,11 @@
   systemd.package = pkgs.systemd.override { withSelinux = true; };
 
   environment.systemPackages = with pkgs; [
-    swig
+    #swig
+    #libsemanage
     policycoreutils
+    libsemanage.override {
+      withPython = false;
+    }
   ];
 }
