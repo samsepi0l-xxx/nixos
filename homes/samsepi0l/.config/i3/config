@@ -10,7 +10,7 @@
 # ┛ ┛━━┛ ┛   ┛┛┛┛ ┛━━┛ ┛ ━━┛┛ ┛
 
 set $mod Mod4
-new_window pixel 0
+# new_window pixel 0
 
 # ┏━┛┏━┃┏━ ━┏┛┏━┃┏━┃┃  ┏━┛
 # ┃  ┃ ┃┃ ┃ ┃ ┏┏┛┃ ┃┃  ━━┃
@@ -37,23 +37,19 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 floating_modifier $mod
 
 # 𝐒𝐭𝐚𝐫𝐭 𝐭𝐡𝐞 𝐓𝐞𝐫𝐦𝐢𝐧𝐚𝐥 𝐄𝐦𝐮𝐥𝐚𝐭𝐨𝐫
-bindsym $mod+Return exec kitty -1
+bindsym $mod+Return exec termite 
 
 # 𝐂𝐥𝐨𝐬𝐞 𝐚 𝐰𝐢𝐧𝐝𝐨𝐰
 bindsym $mod+q kill
 
 # 𝐎𝐩𝐞𝐧 𝐭𝐡𝐞 𝐝𝐦𝐞𝐧𝐮 -> 𝐨𝐥𝐝 𝐦𝐨𝐝𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐝𝐦𝐞𝐧𝐮_𝐫𝐮𝐧
-bindsym $mod+d exec --no-startup-id ~/Dev/rofi/files/launchers/type-1/launcher.sh
-bindsym $mod+f exec --no-startup-id ~/Dev/rofi/files/powermenu/type-6/powermenu.sh
+bindsym $mod+d exec --no-startup-id ~/GitHub/nixos/homes/samsepi0l/.config/rofi/launchers/type-1/launcher.sh
+bindsym $mod+f exec --no-startup-id ~/GitHub/nixos/homes/samsepi0l/.config/rofi/powermenu/type-6/powermenu.sh
 bindsym $mod+Tab exec --no-startup-id rofi -show window
-
-# 𝐎𝐩𝐞𝐧 𝐧𝐞𝐨𝐯𝐢𝐝𝐞
-bindsym $mod+t exec --no-startup-id /usr/bin/neovide
 
 # 𝐂𝐡𝐚𝐧𝐠𝐞 𝐤𝐞𝐲𝐛𝐨𝐚𝐫𝐝 𝐥𝐚𝐲𝐨𝐮𝐭
 bindsym $mod+a exec (setxkbmap -model abnt2 -layout br -variant abnt2)
 bindsym $mod+u exec (setxkbmap us)
-
 
 # 𝐢𝟑𝐥𝐨𝐜𝐤
 bindsym $mod+g exec i3lock-fancy --nofork
@@ -203,8 +199,8 @@ bindsym $mod+r mode "resize"
 # ┏━┃┃ ┃┏┏┛┃ ┃┏━┛┏┏┛━━┃
 # ━━ ━━┛┛ ┛━━ ━━┛┛ ┛━━┛
 
-# for_window [class="^.*"] border pixel 2 round
-# new_window pixel 2
+for_window [class="^.*"] border pixel 2 round
+new_window pixel 4
 
 # # Cor da borda
 # client.focused          #FFFFFF #FFFFFF #FFFFFF #FFFFFF
@@ -215,8 +211,8 @@ bindsym $mod+r mode "resize"
 # ┃ ┃┏━┃┏━┛━━┃
 # ━━┛┛ ┛┛  ━━┛
 
-gaps inner 8
-gaps outer 4
+gaps inner 2
+gaps outer 0
 
 # ┏━┛━┏┛┏━┃┏━┃━┏┛
 # ━━┃ ┃ ┏━┃┏┏┛ ┃
@@ -231,7 +227,7 @@ exec --no-startup-id nitrogen --restore &
 exec --no-startup-id setxkbmap br-abnt2 &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id polkit-xfce-authentication-agent-1 &
-exec --no-startup-id xborders --border-radius 7 --border-width 1 &
+#exec --no-startup-id xborders --border-radius 7 --border-width 2 &
 exec --no-startup-id polybar --config=~/.config/polybar/config.ini
 
 # ┏━┃┏━┃┏━┃┏━┛┏━┃┏━┃┏┏ ┏━┛
