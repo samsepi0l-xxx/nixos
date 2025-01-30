@@ -27,7 +27,6 @@
     slint-lsp
     terraform-ls
     ansible-language-server
-    hyprls
     helix-gpt
   ];  
 }

@@ -3,7 +3,7 @@
 {
   # Firewall 
   networking = {
-    firewall.enable = true;
+    firewall.enable = false;
     firewall.allowedTCPPorts = [ 22 80 443 ];
     firewall.allowedUDPPorts = [ 53 ];
   };

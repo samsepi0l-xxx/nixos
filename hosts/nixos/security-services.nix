@@ -23,20 +23,19 @@
       apparmor-profiles
     ];
   };
-  services.fail2ban.enable = true;
-  security.pam.services.hyprlock = {};
+  services.fail2ban.enable = false;
   # security.polkit.enable = true;
   programs.browserpass.enable = true;
   services.clamav = {
-    daemon.enable = true;
-    fangfrisch.enable = true;
+    daemon.enable = false;
+    fangfrisch.enable = false;
     fangfrisch.interval = "daily";
-    updater.enable = true;
+    updater.enable = false;
     updater.interval = "daily"; #man systemd.time
     updater.frequency = 12;
   };
   programs.firejail = {
-    enable = true;
+    enable = false;
     wrappedBinaries = { 
       mpv = {
         executable = "${lib.getBin pkgs.mpv}/bin/mpv";

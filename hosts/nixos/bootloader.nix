@@ -12,7 +12,7 @@
       };
       efi = {
         canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/EFI";
+        efiSysMountPoint = "/boot";
       };
     };
 

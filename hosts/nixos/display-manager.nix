@@ -1,18 +1,11 @@
 { config, username, pkgs, ... }:
 
 {
-  # Enable Display Manager
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --time-format '%I:%M %p | %a • %h | %F' --cmd Hyprland";
-        user = "greeter";
-      };
-    };
-  };
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    greetd.tuigreet
-  ];
+  # Enable the Deepin Desktop Environment.
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.deepin.enable = true;
+  environment.systemPackages = with pkgs; [];
 }
