@@ -6,6 +6,7 @@
     packages = with pkgs; with nodePackages_latest; [
       proxychains-ng
       termite
+      polybar
     ];
   };
 }
