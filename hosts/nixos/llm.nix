@@ -2,7 +2,7 @@
 
 {
   services.ollama.enable = true;
-  services.ollama.loadModels = [ "llama3.2:3b" "smallthinker:3b" "nomic-embed-text" ];
+  services.ollama.loadModels = [ "deepseeker-r1" "llama3.2:3b" ];
   services.ollama.acceleration = false;
   
   environment.systemPackages = with pkgs; [
