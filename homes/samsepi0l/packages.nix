@@ -7,8 +7,9 @@
       proxychains-ng
       termite
       rofi
-      starship
       rio
+      kitty
+      picom
     ];
   };
 }

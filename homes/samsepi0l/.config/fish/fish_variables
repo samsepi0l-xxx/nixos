@@ -3,7 +3,7 @@
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GEM_HOME:/home/samsepi0l/code/gems
 SETUVAR --export GIT_EDITOR:nvim
-SETUVAR --export GPG_TTY:/dev/pts/0
+SETUVAR --export GPG_TTY:/dev/pts/1
 SETUVAR --export LANG:en_US\x2eUTF\x2d8
 SETUVAR --export LC_ALL:en_US\x2eUTF\x2d8
 SETUVAR --export LC_CTYPE:en_US\x2eUTF\x2d8

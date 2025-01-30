@@ -87,3 +87,6 @@ strategy = "events"
 [scroll]
 multiplier = 3.0
 divider = 1.0
+
+[background]
+opacity = 0.5
