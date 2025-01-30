@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    tgpt
     eza
     file
     upx
