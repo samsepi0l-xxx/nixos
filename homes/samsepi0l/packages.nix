@@ -8,6 +8,7 @@
       termite
       rofi
       starship
+      rio
     ];
   };
 }

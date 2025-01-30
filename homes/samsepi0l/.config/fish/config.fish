@@ -6,7 +6,7 @@ alias an='ansible'
 alias ap='ansible-playbook'
 
 # ci
-alias ci='git add -A && git amend && git push -f'
+alias ci='git add -A && git commit --amend --no-edit && git push -f'
 
 # dir
 alias ..='cd ..'
@@ -371,25 +371,6 @@ function extract
         case '*'
             echo "extract: $argv - unknown archive method"
     end
-end
-
-# starship
-set -x STARSHIP_CONFIG /home/samsepi0l/GitHub/nixos/homes/samsepi0l/.config/fish/starship.toml
-if [ -e $STARSHIP_CONFIG ]
-    if not type -q starship
-        echo "Installing starship ..."
-        sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-    end
-    starship init fish | source
-end
-
-# z.lua
-set -x ZLUA_FILE /home/samsepi0l/GitHub/nixos/homes/samsepi0l/.config/fish/z.lua
-if [ -e $ZLUA_FILE ]
-    set -gx _ZL_MATCH_MODE 1
-    set -gx _ZL_CMD z
-    set -gx _ZL_ADD_ONCE 1
-    source (lua $ZLUA_FILE --init fish | psub)
 end
 
 # fzf

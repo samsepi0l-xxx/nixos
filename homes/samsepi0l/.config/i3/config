@@ -198,9 +198,8 @@ bindsym $mod+r mode "resize"
 # ┏━ ┏━┃┏━┃┏━ ┏━┛┏━┃┏━┛
 # ┏━┃┃ ┃┏┏┛┃ ┃┏━┛┏┏┛━━┃
 # ━━ ━━┛┛ ┛━━ ━━┛┛ ┛━━┛
-
-for_window [class="^.*"] border pixel 2 round
-new_window pixel 4
+default_border normal
+default_floating_border normal
 
 # # Cor da borda
 # client.focused          #FFFFFF #FFFFFF #FFFFFF #FFFFFF

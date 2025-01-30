@@ -8,6 +8,7 @@
     "neofetch".source = link ./.config/neofetch;
     "rofi".source = link ./.config/rofi;
     "fish".source = link ./.config/fish;
+    "rio".source = link ./.config/rio;
     # "ags".source = link ./.
     # "thorium-flags.conf".source = link ./.config/thorium-flags.co
     # "starship.toml".source = link ./.config/starship.toml;
