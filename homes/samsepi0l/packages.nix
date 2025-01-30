@@ -5,11 +5,11 @@
   home = {
     packages = with pkgs; with nodePackages_latest; [
       proxychains-ng
-      termite
+     # termite
       rofi
-      rio
+     # rio
       kitty
-      picom
+     # picom
     ];
   };
 }
