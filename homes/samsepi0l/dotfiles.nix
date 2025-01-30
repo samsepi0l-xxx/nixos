@@ -2,7 +2,7 @@
   xdg.configFile = let link = impurity.link; in {
     #"termite".source = link ./.config/termite;
     "nvim".source = link ./.config/nvim;
-    "i3".source = link ./.config/i3;
+    #"i3".source = link ./.config/i3;
     "i3lock".source = link ./.config/i3lock;
     "i3status".source = link ./.config/i3status;
     "neofetch".source = link ./.config/neofetch;
