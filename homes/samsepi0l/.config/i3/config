@@ -37,7 +37,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 floating_modifier $mod
 
 # 𝐒𝐭𝐚𝐫𝐭 𝐭𝐡𝐞 𝐓𝐞𝐫𝐦𝐢𝐧𝐚𝐥 𝐄𝐦𝐮𝐥𝐚𝐭𝐨𝐫
-bindsym $mod+Return exec termite 
+bindsym $mod+Return exec rio 
 
 # 𝐂𝐥𝐨𝐬𝐞 𝐚 𝐰𝐢𝐧𝐝𝐨𝐰
 bindsym $mod+q kill

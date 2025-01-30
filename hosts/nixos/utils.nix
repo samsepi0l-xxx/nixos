@@ -14,5 +14,6 @@
     jdk17
     dioxus-cli
     trunk
+    python311Packages.pipx
   ];
 }

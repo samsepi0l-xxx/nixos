@@ -409,6 +409,16 @@ switch (uname)
         alias pocr='pngpaste - | tesseract stdin stdout'
 end
 
+function fish_prompt
+    set_color '#ADFF2F'  # Verde limão (Lime Green)
+    echo -n "["(whoami)"@"(hostname)":"
+    
+    set_color blue
+    echo -n (pwd | sed "s|^$HOME|~|")
+    
+    set_color normal
+    echo -n "]\$ "  
+end
 
 # key bindings
 bind \ee "nvim; commandline -f repaint"
