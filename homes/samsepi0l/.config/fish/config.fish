@@ -51,8 +51,6 @@ alias tx='tmuxp'
 # go
 set -gx GOPATH $HOME/code/go
 # set -gx GOPROXY https://goproxy.cn,direct
-alias goci='golangci-lint run --config $HOME/.data/.golangci.yml'
-alias gostrict='golangci-lint run --config $HOME/.data/.golangci-strict.yml'
 alias fmt='goimports -w . && go mod tidy'
 alias fmtf='gofumpt -l -w . && go mod tidy'
 alias fmts='gosimports -w . && go mod tidy'
@@ -376,7 +374,7 @@ function extract
 end
 
 # starship
-set -x STARSHIP_CONFIG $HOME/.config/fish/starship.toml
+set -x STARSHIP_CONFIG /home/samsepi0l/GitHub/nixos/homes/samsepi0l/.config/fish/starship.toml
 if [ -e $STARSHIP_CONFIG ]
     if not type -q starship
         echo "Installing starship ..."
@@ -386,7 +384,7 @@ if [ -e $STARSHIP_CONFIG ]
 end
 
 # z.lua
-set -x ZLUA_FILE $HOME/.config/fish/z.lua
+set -x ZLUA_FILE /home/samsepi0l/GitHub/nixos/homes/samsepi0l/.config/fish/z.lua
 if [ -e $ZLUA_FILE ]
     set -gx _ZL_MATCH_MODE 1
     set -gx _ZL_CMD z
@@ -429,10 +427,6 @@ switch (uname)
         # brew install tesseract pngpaste
         alias pocr='pngpaste - | tesseract stdin stdout'
 end
-
-
-# confidential
-[ -e $HOME/.config/fish/cc.fish ] && source $HOME/.config/fish/cc.fish
 
 
 # key bindings

@@ -7,6 +7,7 @@
       proxychains-ng
       termite
       rofi
+      starship
     ];
   };
 }
