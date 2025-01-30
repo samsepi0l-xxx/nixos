@@ -30,7 +30,6 @@
 
   environment.systemPackages = with pkgs; [
     at-spi2-atk
-    qt6.qtwayland
     psi-notify
     poweralertd
     playerctl
@@ -47,8 +46,6 @@
     xdg-utils
     wtype
     wlrctl
-    waybar
-    rofi-wayland
     dunst
     avizo
     wlogout

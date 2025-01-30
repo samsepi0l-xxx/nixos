@@ -25,6 +25,9 @@ in
 
   programs = {
     home-manager.enable = true;
+    firefox = {
+      enable = true;
+    };
     neovim = {
       enable = true;
       package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;

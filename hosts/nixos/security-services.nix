@@ -86,7 +86,6 @@
     chkrootkit   #scan command: sudo chkrootkit
 
     # passphrase2pgp
-    pass-wayland
     pass2csv
     passExtensions.pass-tomb
     passExtensions.pass-update

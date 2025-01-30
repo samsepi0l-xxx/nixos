@@ -1,7 +1,7 @@
 { config, username, pkgs, ... }:
 
 {
-  services.ollama.enable = true;
+  services.ollama.enable = false;
   services.ollama.loadModels = [ "deepseeker-r1" "llama3.2:3b" ];
   services.ollama.acceleration = false;
   
