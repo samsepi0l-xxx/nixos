@@ -1,11 +1,23 @@
 { config, username, pkgs, ... }:
 
 {
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.displayManager.defaultSession = "none+i3";
+  services.xserver = {
+    enable = true;
 
-  # Enable the Deepin Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.deepin.enable = true;
+    desktopManager = {
+      xterm.enable = false;
+    };
+   
+    windowManager.i3 = {
+      enable = true;
+      extraPackages = with pkgs; [
+        dmenu 
+        i3status 
+        i3lock 
+        i3blocks
+     ];
+    };
+  };
   environment.systemPackages = with pkgs; [];
 }
