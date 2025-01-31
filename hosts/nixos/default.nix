@@ -29,17 +29,17 @@
     ./security-services.nix
     ./security-tools.nix
     ./services.nix
-    ./swap.nix
+    #./swap.nix
     ./terminal-utils.nix
-    ./theme.nix
-    #./usb.nix
+    # ./theme.nix
+    # ./usb.nix
     ./users.nix
     ./utils.nix
     ./virtualisation.nix
     ./vpn.nix
     # ./wasm.nix
     ./work.nix
-    ./yubikey.nix
+    #./yubikey.nix
   ];
 }
 
