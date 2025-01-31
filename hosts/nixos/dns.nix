@@ -18,7 +18,7 @@
     };
 
     # If using iwd:
-    wireless.iwd.settings.Network.NameResolvingService = "none";
+    # wireless.iwd.settings.Network.NameResolvingService = "none";
   };
 
   services.dnscrypt-proxy2 = {

@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./amd.nix
+    ./amd.nix
     ./audio.nix
     # ./auto-upgrade.nix
     ./bluetooth.nix
@@ -8,17 +8,15 @@
     # ./clamav-scanner.nix
     ./configuration.nix
     ./display-manager.nix
-    ./dns.nix
+    #./dns.nix
     ./environment-variables.nix
     ./firewall.nix
     ./fonts.nix
     ./gc.nix
-    ./hardware-configuration.nix
-    ./hyprland.nix
     ./info-fetchers.nix
     ./keyboard.nix
     ./kernel.nix
-    ./llm.nix
+    #./llm.nix
     ./locale.nix
     ./lsp.nix
     # ./mac-randomize.nix
@@ -34,7 +32,7 @@
     ./swap.nix
     ./terminal-utils.nix
     ./theme.nix
-    ./usb.nix
+    #./usb.nix
     ./users.nix
     ./utils.nix
     ./virtualisation.nix

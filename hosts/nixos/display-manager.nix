@@ -1,18 +1,11 @@
-{ config, username, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  # Enable Display Manager
-  services.greetd = {
+  services.xserver = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --time-format '%I:%M %p | %a • %h | %F' --cmd Hyprland";
-        user = "greeter";
-      };
-    };
-  };
-
+    displayManager.lightdm.enable = true;
+    desktopManager.lxqt.enable = true;
+  }; 
   environment.systemPackages = with pkgs; [
-    greetd.tuigreet
   ];
 }
