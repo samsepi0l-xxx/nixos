@@ -31,7 +31,7 @@
     ./services.nix
     #./swap.nix
     ./terminal-utils.nix
-    # ./theme.nix
+    ./theme.nix
     # ./usb.nix
     ./users.nix
     ./utils.nix
