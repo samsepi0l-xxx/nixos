@@ -1,24 +1,14 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, modulesPath, ... }:
 
 {
+  imports =
+    [ (modulesPath + "/installer/scan/not-detected.nix")
+    ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-
-  boot.kernelParams = [ 
-    "quiet" "splash"
-    "fbcon=nodefer"
-    "vt.global_cursor_default=0"
-    "kernel.modules_disabled=0"
-    "video4linux"
-    "acpi_rev_override=5"
-    "mitigations=auto,nosmt"   # Segurança contra vulnerabilidades de CPU
-    "amd_pstate=active"        # Melhor escalonamento de frequência para CPUs AMD
-    "lsm=landlock,lockdown,yama,integrity,bpf,apparmor"
-    "security=apparmor"
-  ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/362557db-f656-4d04-9bc7-20b614d87b46";
@@ -44,5 +34,4 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-
 }
