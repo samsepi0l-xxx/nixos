@@ -9,9 +9,15 @@
 
   boot.kernelParams = [ 
     "quiet" "splash"
+    "fbcon=nodefer"
+    "vt.global_cursor_default=0"
+    "kernel.modules_disabled=0"
+    "video4linux"
+    "acpi_rev_override=5"
     "mitigations=auto,nosmt"   # Segurança contra vulnerabilidades de CPU
     "amd_pstate=active"        # Melhor escalonamento de frequência para CPUs AMD
-    "lsm=landlock,lockdown,yama,integrity,bpf,apparmor"  # Apenas SELinux ativado
+    "lsm=landlock,lockdown,yama,integrity,bpf,apparmor"
+    "security=apparmor"
   ];
 
   fileSystems."/" =
