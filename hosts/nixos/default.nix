@@ -2,13 +2,13 @@
   imports = [
     ./amd.nix
     ./audio.nix
-    # ./auto-upgrade.nix
+    ./auto-upgrade.nix
     ./bluetooth.nix
     ./bootloader.nix
     # ./clamav-scanner.nix
     ./configuration.nix
     ./display-manager.nix
-    #./dns.nix
+    ./dns.nix
     ./environment-variables.nix
     ./firewall.nix
     ./fonts.nix
@@ -16,7 +16,7 @@
     ./info-fetchers.nix
     ./keyboard.nix
     ./kernel.nix
-    #./llm.nix
+    ./llm.nix
     ./locale.nix
     ./lsp.nix
     # ./mac-randomize.nix
