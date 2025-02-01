@@ -23,7 +23,7 @@
     ./networking.nix
     ./nix-settings.nix
     ./nixpkgs.nix
-    # ./open-ssh.nix
+    ./open-ssh.nix
     ./opengl.nix
     ./programming-languages.nix
     ./security-services.nix

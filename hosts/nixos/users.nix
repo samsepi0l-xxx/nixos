@@ -5,7 +5,7 @@
   users.users.${username} = {
     isNormalUser = true;
     description = "samsepi0l";
-    extraGroups = [ "networkmanager" "input" "uinput" "libvirtd" "docker" "vboxusers" "wheel" "video" "audio" "tss" ];
+    extraGroups = [ "networkmanager" "input" "uinput" "libvirtd" "docker" "vboxusers" "wheel" "video" "audio" "tss" "sshd" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       spotify
