@@ -9,7 +9,7 @@
 
   # Enable MAC Randomize
   systemd.services.macchanger = {
-    enable = true;
+    enable = false;
     description = "Change MAC address";
     wantedBy = [ "multi-user.target" ];
     after = [ "network.target" ];

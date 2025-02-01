@@ -32,12 +32,11 @@
     ./swap.nix
     ./terminal-utils.nix
     ./theme.nix
-    # ./usb.nix
+    ./usb.nix
     ./users.nix
     ./utils.nix
     ./virtualisation.nix
     ./vpn.nix
-     ./wasm.nix
     ./work.nix
     ./yubikey.nix
   ];

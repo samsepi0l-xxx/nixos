@@ -11,4 +11,8 @@
   environment.systemPackages = with pkgs; [
     impala
   ];
+
+  systemd.services.networkd = {
+    enable = false;
+  };
 }

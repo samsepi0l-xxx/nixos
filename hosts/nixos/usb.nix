@@ -2,7 +2,7 @@
 
 {
   # USB Automounting
-  #services.gvfs.enable = false;
+  # services.gvfs.enable = false;
   # services.udisks2.enable = true;
   # services.devmon.enable = true;
 

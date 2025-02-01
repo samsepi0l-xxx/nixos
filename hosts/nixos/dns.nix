@@ -8,12 +8,13 @@
       "191.240.0.70" "191.240.0.71"
       "9.9.9.9" # Quad9
     ];
+
     # If using dhcpcd:
     dhcpcd.enable = false; # disable, because enabled by default
     dhcpcd.extraConfig = "nohook resolv.conf";
 
     # If using NetworkManager:
-    # networkmanager.dns = "none";
+    networkmanager.dns = "systemd-resolved";
 
     # If using resolvconf:
     resolvconf = {
@@ -28,7 +29,8 @@
   services.dnscrypt-proxy2 = {
     enable = true;
     settings = {
-      listen_addresses = [ "127.0.0.1:53" "[::1]:53 [::1]:51" "191.240.0.70:53" "191.240.0.71:53" ];
+
+      listen_addresses = [ "127.0.0.1:53" "[::1]:53" "[::1]:51" "191.240.0.70:53" "191.240.0.71:53" ];
 
       ipv6_servers = true;
       require_dnssec = true;
@@ -48,13 +50,10 @@
   };
 
   services.dbus.enable = true;
+  services.resolved.enable = true;
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy";
-  };
-
-  systemd.services.systemd-resolved = {
-    enable = true;
   };
 
 }
