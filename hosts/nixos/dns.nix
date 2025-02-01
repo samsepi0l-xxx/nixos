@@ -4,8 +4,6 @@
   # Enable Encrypted DNS
   networking = {
     nameservers = [ 
-      "127.0.0.1" "[::1]"
-      "191.240.0.70" "191.240.0.71"
       "9.9.9.9" # Quad9
     ];
 
