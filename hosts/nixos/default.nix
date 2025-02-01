@@ -8,7 +8,7 @@
     # ./clamav-scanner.nix
     ./configuration.nix
     ./display-manager.nix
-    ./dns.nix
+    #./dns.nix
     ./environment-variables.nix
     ./firewall.nix
     ./fonts.nix

@@ -3,18 +3,22 @@
 {
   # Enable Encrypted DNS
   networking = {
-    nameservers = [ "127.0.0.1" "[::1]" ];
+    nameservers = [ 
+      "127.0.0.1" "[::1]"
+      "191.240.0.70" "191.240.0.71"
+      "9.9.9.9" # Quad9
+    ];
     # If using dhcpcd:
     dhcpcd.enable = false; # disable, because enabled by default
     dhcpcd.extraConfig = "nohook resolv.conf";
 
     # If using NetworkManager:
-    networkmanager.dns = "none";
+    # networkmanager.dns = "none";
 
     # If using resolvconf:
     resolvconf = {
-      enable = true; # FIXME remember to delete /etc/resolv.conf if you disable `resolvconf`
-      useLocalResolver = true;
+      enable = false; # FIXME remember to delete /etc/resolv.conf if you disable `resolvconf`
+      useLocalResolver = false;
     };
 
     # If using iwd:
@@ -24,7 +28,7 @@
   services.dnscrypt-proxy2 = {
     enable = true;
     settings = {
-      listen_addresses = [ "127.0.0.1:53" "[::1]:53 [::1]:51" ];
+      listen_addresses = [ "127.0.0.1:53" "[::1]:53 [::1]:51" "191.240.0.70:53" "191.240.0.71:53" ];
 
       ipv6_servers = true;
       require_dnssec = true;
@@ -44,7 +48,6 @@
   };
 
   services.dbus.enable = true;
-  services.dnscache.enable = true;
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy";
@@ -52,7 +55,7 @@
 
   systemd.services.systemd-resolved = {
     enable = true;
-    description = "DNS Resolver";
   };
+
 }
 
