@@ -1,24 +1,23 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
-  boot.kernelModules = [ "kvm-amd" ];
-  boot.kernelParams = [ 
+
+  imports =
+    [ (modulesPath + "/installer/scan/not-detected.nix")
+    ];
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+    boot.kernelParams = [ 
     "splash"
     "quiet"
-    "fbcon=nodefer"
-    "vt.global_cursor_default=0"
-    "lsm=landlock,lockdown,yama,integrity,apparmor,bpf,tomoyo,apparmor"
-    "usbcore.autosuspend=-1"
-    "video4linux"
-    "acpi_rev_override=5"
-    "video=DP-1:1336x736@60"
+    "lsm=landlock,lockdown,yama,integrity,apparmor,bpf,tomoyo"
+    "security=apparmor"
   ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-
-  boot.extraModulePackages = with config.boot.kernelPackages; [ wireguard ];
+  boot.kernelModules = [ "kvm-amd" ];
+  boot.extraModulePackages = [ ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/362557db-f656-4d04-9bc7-20b614d87b46";
@@ -44,8 +43,4 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-
-  environment.systemPackages = with pkgs; [
-    policycoreutils
-  ];
 }

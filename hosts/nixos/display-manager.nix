@@ -5,7 +5,6 @@
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager.lxqt.enable = true;
-    # videoDrivers = [ "amdgpu" ];
     deviceSection = ''
       Option "PreferredMode" "1336x736"
     '';
