@@ -5,10 +5,10 @@
     ./auto-upgrade.nix
     ./bluetooth.nix
     ./bootloader.nix
-    # ./clamav-scanner.nix
+    ./clamav-scanner.nix
     ./configuration.nix
     ./display-manager.nix
-    #./dns.nix
+    ./dns.nix
     ./environment-variables.nix
     ./firewall.nix
     ./fonts.nix
@@ -29,7 +29,7 @@
     ./security-services.nix
     ./security-tools.nix
     ./services.nix
-    #./swap.nix
+    ./swap.nix
     ./terminal-utils.nix
     ./theme.nix
     # ./usb.nix
@@ -37,9 +37,9 @@
     ./utils.nix
     ./virtualisation.nix
     ./vpn.nix
-    # ./wasm.nix
+     ./wasm.nix
     ./work.nix
-    #./yubikey.nix
+    ./yubikey.nix
   ];
 }
 
