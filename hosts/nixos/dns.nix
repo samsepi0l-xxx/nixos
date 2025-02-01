@@ -4,7 +4,7 @@
   # Enable Encrypted DNS
   networking = {
     nameservers = [ 
-      "9.9.9.9" # Quad9
+      "127.0.0.1"
     ];
 
     # If using dhcpcd:
@@ -28,7 +28,7 @@
     enable = true;
     settings = {
 
-      listen_addresses = [ "127.0.0.1:53" "[::1]:53" "[::1]:51" "191.240.0.70:53" "191.240.0.71:53" ];
+      listen_addresses = [ "127.0.0.1:53" ];
 
       ipv6_servers = true;
       require_dnssec = true;
