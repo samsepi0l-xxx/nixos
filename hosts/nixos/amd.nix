@@ -5,11 +5,11 @@
     graphics = {
       enable = true;
       enable32Bit = true;
-      extraPackages = [
-        pkgs.amdvlk
+      extraPackages = with pkgs; [
+        amdvlk
       ];
-      extraPackages32 = [
-        pkgs.driversi686Linux.amdvlk
+      extraPackages32 = with pkgs; [
+        driversi686Linux.amdvlk
       ];
     };
   };
