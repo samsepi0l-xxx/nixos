@@ -2,7 +2,7 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
-  boot.kernelModules = [ "kvm-amd" ];A
+  boot.kernelModules = [ "kvm-amd" ];
   boot.kernelParams = [ 
     "splash"
     "quiet"
