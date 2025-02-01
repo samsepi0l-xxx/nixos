@@ -20,11 +20,11 @@
     # If using iwd:
     # wireless.iwd.settings.Network.NameResolvingService = "none";
   };
-
+  
   services.dnscrypt-proxy2 = {
     enable = true;
     settings = {
-      listen_addresses = [ "127.0.0.1:53" "[::1]:53" ];
+      listen_addresses = [ "127.0.0.1:53" "[::1]:53 [::1]:51" ];
 
       ipv6_servers = true;
       require_dnssec = true;
@@ -43,7 +43,16 @@
     };
   };
 
+  services.dbus.enable = true;
+  services.dnscache.enable = true;
+
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy";
   };
+
+  systemd.services.systemd-resolved = {
+    enable = true;
+    description = "DNS Resolver";
+  };
 }
+

@@ -17,6 +17,7 @@
       lutris
       vscode
       neovide
+      discord-canary
     ];
   };
 
