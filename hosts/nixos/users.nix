@@ -18,6 +18,7 @@
       vscode
       neovide
       discord-canary
+      obsidian
     ];
   };
 
