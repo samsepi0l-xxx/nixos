@@ -1,4 +1,5 @@
 set fish_greeting
+
 export XDG_CONFIG_HOME="$HOME/.config"
 
 function fish_prompt
