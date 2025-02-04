@@ -10,7 +10,6 @@
   
   environment.systemPackages = with pkgs; [
     impala
-    ciscoPacketTracer8
   ];
 
   systemd.services.networkd = {
