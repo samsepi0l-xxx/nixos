@@ -19,6 +19,7 @@
       neovide
       discord-canary
       obsidian
+      codeblocks
     ];
   };
 
